@@ -17,6 +17,7 @@
 		CEB86E311E06981300AE5328 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB86E2D1E06981300AE5328 /* Device.swift */; };
 		CEB86E331E069A7900AE5328 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB86E321E069A7900AE5328 /* LoginViewController.swift */; };
 		CEBD72FF1E06A52C00D8ED5A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEBD72FE1E06A52C00D8ED5A /* GoogleService-Info.plist */; };
+		CEF855491E0B414100B07260 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = CEF855481E0B414100B07260 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		CEB86E321E069A7900AE5328 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CEB86E341E06A04200AE5328 /* Light Control.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Light Control.entitlements"; sourceTree = SOURCE_ROOT; };
 		CEBD72FE1E06A52C00D8ED5A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CEF855481E0B414100B07260 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E596F6246AE1F56DBCEB3F0A /* Pods-Light Control.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Light Control.release.xcconfig"; path = "Pods/Target Support Files/Pods-Light Control/Pods-Light Control.release.xcconfig"; sourceTree = "<group>"; };
 		F6BE775ECA09BF0C270D5D72 /* Pods-Light Control.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Light Control.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Light Control/Pods-Light Control.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -54,6 +56,7 @@
 		7A03251E1DA7A9470022EE61 = {
 			isa = PBXGroup;
 			children = (
+				CEF855481E0B414100B07260 /* README.md */,
 				7A0325291DA7A9470022EE61 /* Light Control */,
 				7A0325281DA7A9470022EE61 /* Products */,
 				D7BF60BC88C8CD34450D1E13 /* Pods */,
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF855491E0B414100B07260 /* README.md in Sources */,
 				CEB86E331E069A7900AE5328 /* LoginViewController.swift in Sources */,
 				CEB86E301E06981300AE5328 /* DeviceTableViewCell.swift in Sources */,
 				CEB86E2F1E06981300AE5328 /* MainTableViewController.swift in Sources */,
