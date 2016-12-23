@@ -46,10 +46,15 @@ class MainTableViewController: UITableViewController, GIDSignInUIDelegate, GIDSi
     
         do {
             // sign out first from Firebase
+            print("sign out FB")
             try FIRAuth.auth()?.signOut()
+            
+            print("sign out google")
+            GIDSignIn.sharedInstance().signOut()
         
             // go back to login screen
             // MARK still doesn't work!
+            print("back to start screen")
             let loginVC = LoginViewController()
             self.present(loginVC, animated: true, completion: nil)
             
@@ -104,7 +109,7 @@ class MainTableViewController: UITableViewController, GIDSignInUIDelegate, GIDSi
         
             
         }) { (err:Error) in
-            print("got an error: ", err)
+            print("got an error reading device data: ", err)
         }
         
     

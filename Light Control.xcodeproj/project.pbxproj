@@ -12,11 +12,11 @@
 		7A0325301DA7A9470022EE61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A03252E1DA7A9470022EE61 /* Main.storyboard */; };
 		7A0325321DA7A9470022EE61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A0325311DA7A9470022EE61 /* Assets.xcassets */; };
 		7A0325351DA7A9470022EE61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A0325331DA7A9470022EE61 /* LaunchScreen.storyboard */; };
+		CE5CFBB21E0D5873009F6DF7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE5CFBB11E0D5873009F6DF7 /* GoogleService-Info.plist */; };
 		CEB86E2F1E06981300AE5328 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB86E2B1E06981300AE5328 /* MainTableViewController.swift */; };
 		CEB86E301E06981300AE5328 /* DeviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB86E2C1E06981300AE5328 /* DeviceTableViewCell.swift */; };
 		CEB86E311E06981300AE5328 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB86E2D1E06981300AE5328 /* Device.swift */; };
 		CEB86E331E069A7900AE5328 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB86E321E069A7900AE5328 /* LoginViewController.swift */; };
-		CEF8554B1E0B472800B07260 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEF8554A1E0B472800B07260 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,12 +29,12 @@
 		7A0325361DA7A9470022EE61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A03253E1DA7B3E00022EE61 /* Light Control.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Light Control.entitlements"; sourceTree = "<group>"; };
 		7A03253F1DA7B7A10022EE61 /* Light Control In-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Light Control In-Bridging-Header.h"; sourceTree = "<group>"; };
+		CE5CFBB11E0D5873009F6DF7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CEB86E2B1E06981300AE5328 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		CEB86E2C1E06981300AE5328 /* DeviceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceTableViewCell.swift; sourceTree = "<group>"; };
 		CEB86E2D1E06981300AE5328 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		CEB86E321E069A7900AE5328 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CEB86E341E06A04200AE5328 /* Light Control.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Light Control.entitlements"; sourceTree = SOURCE_ROOT; };
-		CEF8554A1E0B472800B07260 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E596F6246AE1F56DBCEB3F0A /* Pods-Light Control.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Light Control.release.xcconfig"; path = "Pods/Target Support Files/Pods-Light Control/Pods-Light Control.release.xcconfig"; sourceTree = "<group>"; };
 		F6BE775ECA09BF0C270D5D72 /* Pods-Light Control.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Light Control.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Light Control/Pods-Light Control.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,7 +72,7 @@
 		7A0325291DA7A9470022EE61 /* Light Control */ = {
 			isa = PBXGroup;
 			children = (
-				CEF8554A1E0B472800B07260 /* GoogleService-Info.plist */,
+				CE5CFBB11E0D5873009F6DF7 /* GoogleService-Info.plist */,
 				CEB86E341E06A04200AE5328 /* Light Control.entitlements */,
 				CEB86E291E0697D800AE5328 /* views */,
 				CEB86E281E0697CE00AE5328 /* controllers */,
@@ -200,7 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A0325351DA7A9470022EE61 /* LaunchScreen.storyboard in Resources */,
-				CEF8554B1E0B472800B07260 /* GoogleService-Info.plist in Resources */,
+				CE5CFBB21E0D5873009F6DF7 /* GoogleService-Info.plist in Resources */,
 				7A0325321DA7A9470022EE61 /* Assets.xcassets in Resources */,
 				7A0325301DA7A9470022EE61 /* Main.storyboard in Resources */,
 			);

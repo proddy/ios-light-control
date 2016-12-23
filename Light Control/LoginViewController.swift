@@ -8,15 +8,10 @@ import Firebase
 import GoogleSignIn
 
 class LoginViewController: UIViewController, GIDSignInUIDelegate {
-
  
     // main
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        GIDSignIn.sharedInstance().uiDelegate = self
-//        GIDSignIn.sharedInstance().signIn()
-
     }
     
     override func didReceiveMemoryWarning() {
