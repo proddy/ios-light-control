@@ -65,44 +65,38 @@ class MainTableViewController: UITableViewController, GIDSignInUIDelegate, GIDSi
     
     }
     
+    // read device info from FB
     func fetchDevice(){
         
         ref.observe(.value, with: { (snapshot: FIRDataSnapshot) in
             
-            print ("Preparing to read devices")
-            
             // delete existing table
             self.items.removeAll()
             
-            for chipItem: FIRDataSnapshot in snapshot.children.allObjects as! [FIRDataSnapshot]{
-                
-                let chipId: String = chipItem.key
+            // get devices tree
+            let devices: FIRDataSnapshot = snapshot.childSnapshot(forPath: "devices")
             
-                let titles: FIRDataSnapshot = chipItem.childSnapshot(forPath: "titles")
+            // build up device database
+            for device in devices.children.allObjects as! [FIRDataSnapshot]{
                 
+                // chipId is name of parent node
+                let chipId: String = device.key
+                print("Got device with chipID: ", chipId)
                 
-                for device in titles.children.allObjects as! [FIRDataSnapshot]{
-                    
-                    print("Got device: ", device)
-                    
-                    let value: NSDictionary = device.value as! NSDictionary
-                    
-                    let deviceTitle: String = value["title"] as! String
-                    let deviceId: String = value["id"] as! String
-                    
-                    let deviceState: Bool = chipItem.childSnapshot(forPath: "states/\(deviceId)").value as! Bool
-                    
-                    let newDevice = Device()
-                    
-                    newDevice.title = deviceTitle
-                    newDevice.chipId = chipId
-                    newDevice.state = deviceState
-                    newDevice.id = deviceId
-                    
-                    self.items.append(newDevice)
-                }
+                // now get child
+                let child: FIRDataSnapshot = devices.childSnapshot(forPath: chipId)
+                print("got this set of child data: ", child)
+                let value: NSDictionary = child.value as! NSDictionary
                 
+                let newDevice = Device()
+                
+                newDevice.chipId = chipId
+                newDevice.title = value["title"] as! String
+                newDevice.state = value["state"] as! Bool
+                
+               self.items.append(newDevice)
             }
+            
             
             // refresh table
             self.tableView.reloadData()
@@ -166,6 +160,7 @@ class MainTableViewController: UITableViewController, GIDSignInUIDelegate, GIDSi
             else {
                 print("User signed into Firebase")
                 
+                // load all the devices
                 self.fetchDevice()
                 
                 self.ref.child("user_profiles").child(user!.uid).observeSingleEvent(of: .value, with: { (snapshot) in

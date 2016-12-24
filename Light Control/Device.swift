@@ -9,7 +9,6 @@ import FirebaseDatabase
 
 class Device: NSObject{
     
-    var id: String = ""
     var chipId: String = ""
     var title: String = ""
     var state: Bool = false
@@ -38,8 +37,9 @@ class Device: NSObject{
     func updateState(){
     
         let ref = FIRDatabase.database().reference()
-        //123/states/001 = true or false
-        ref.child("\(self.chipId)/states/\(self.id)").setValue(state)
+        
+        // devices/<chipId>/state = true or false
+        ref.child("devices/\(self.chipId)/state").setValue(state)
     
     }
     
